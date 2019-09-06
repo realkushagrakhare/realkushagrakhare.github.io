@@ -7,8 +7,8 @@
   </div>
   <div class="contents">
     <h3> Real Engine 2.0</h3>
-    <p>A 3D Game Engine in progress using LWJGL and new OpenGL 3.0+ using the programmable pipeline.
-	<ul> Some of the features developed
+    <p>A 3D Game Engine built from scratch in progress using LWJGL and new OpenGL 3.0+ using the programmable pipeline. Some of the features developed:</p>
+	<ul>
       <li>VAOs, VBOs, Vertex and Fragment Shaders for optimization</li>
       <li>OBJ and PLY file reader to load 3D models</li>
       <li>Multiple point lights and upto 4 directional lights as well as Specular Lighting</li>
@@ -27,15 +27,49 @@
   </div>
 </div>
 <div class="user-projects">
-  <div class="images-left">
+  <div class="images-right">
     <img alt="mountains" src="{{ "/assets/img/skate.jpg" | prepend: site.baseurl }}" />
   </div>
-  <div class="contents-right">
-    <h3> Project Title </h3>
+  <div class="contents">
+    <h3>Sociophobia VR</h3>
+	<p>VR simulation for people with certain anxiety disorders in professional settings, such as speaking in front of a group at work 
+	or attending an interview. We see a large number of people with such issues and this project is to help them:</p>
     <ul>
-      <li> Featured Skills</li>
+      <li>A scene with a small number of people in a typical team meeting or a presentation in a company</li>
+	  <li>Server-client model, wherein majority of the controls, for controlling various events to create distraction like phone vibration, chair squeeking, people talking etc, are triggered from the server model, which controls the scene in the client</li>
+	  <li>The patient (player) uses a HMD to view the scene (the audience) - and simultaneously talk through the presentation (considering it an actual presentation)</li>
+	  <li>As the player starts presentation, the audience indulges in actions (animated) such as yawning or showing lack of interest, distract the speaker by turning 
+	  and talking to another person etc. Other included events to create distraction are phone vibration, chair squeeking, person exiting the 
+	  room. These actions would be controlled by a therapist.</li>
+	  <li>Framework to add more such events using Factory Design Pattern.</li>
+	  <li>Support to automatically trigger these events given the probability of each event.</li>
+	  <li>Playback mode where the speaker can see his/her performance from a third viewpoint. Player's head movements are tracked while their talking is recorded, and these are used during playback.</li> 
     </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
+	<p>This project was completed in collaboration with Shreyas Iyer.</p>
+    <a class="project-link" href="https://github.com/l0ftyWhizZ/SociophobiaVR">Check it out</a>
+  </div>
+</div>
+
+<div class="user-projects">
+  <div class="images-right">
+    <img alt="mountains" src="{{ "/assets/img/skate.jpg" | prepend: site.baseurl }}" />
+  </div>
+  <div class="contents">
+    <h3>Project Water</h3>
+	<p>Water simulation has a long history in computer graphics and has attracted hundreds of researchers. But the main reason it has 
+	fascinated me is the various  phenomenon that occurs in a liquid like water like reflections, refractions, waves or even splashes. 
+	The major inspiration arose from Evan Wallace’s water rendering. There are various techniques to simulate water. I considered water 
+	as a planar mesh to triangles and distorting the mesh or the textures for various effects.</p>
+    <ul>
+      <li>Simulation in modern OpenGL3.0+ with shaders in C++</li>
+	  <li>Rendering waves by distorting the vertices of the mesh with a sine wave and then recalculating the normals in the vertex shader.</li>
+	  <li>Storing the velocities of every vertex in a texture and using them to find out where the ripple has reached at every step, the 
+	  vertices would lose velocity while the neighbouring ones would gain it, resulting in the ripple moving forward.</li>
+	  <li>Real time ray tracer for refractions. Using the refracted rays calculated using camera, normal vector and light vector, 
+	  calculated the intersection with the walls of the rays. This intersection was used to find out refraction texture at a particular point.</li>
+	  <li>For caustics, found out where the light passing through a ripple would intersect the cubic box. At the point of intersection there could be a caustic,
+	  if the light fell at a particular angle.</li>
+	</ul>
+    <a class="project-link" href="https://github.com/realkushagrakhare/ProjectWater">Check it out</a>
   </div>
 </div>
