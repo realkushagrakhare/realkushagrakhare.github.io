@@ -23,7 +23,7 @@
       <li>Textures with texture atlas and transparency</li>
       <li>Skybox with Day-Night cycle</li>
     </ul>
-    <a class="project-link" href="https://github.com/realkushagrakhare/RealEngine-2.0">Check it out</a>
+    <a class="project-link" href="https://github.com/realkushagrakhare/RealEngine-2.0">Github</a>
   </div>
 </div>
 <div class="user-projects">
@@ -46,13 +46,15 @@
 	  <li>Playback mode where the speaker can see his/her performance from a third viewpoint. Player's head movements are tracked while their talking is recorded, and these are used during playback.</li> 
     </ul>
 	<p>This project was completed in collaboration with Shreyas Iyer.</p>
-    <a class="project-link" href="https://github.com/l0ftyWhizZ/SociophobiaVR">Check it out</a>
+    <a class="project-link" href="https://github.com/l0ftyWhizZ/SociophobiaVR">Github</a>
   </div>
 </div>
 
 <div class="user-projects">
   <div class="images-right">
-    <img alt="mountains" src="{{ "/assets/img/skate.jpg" | prepend: site.baseurl }}" />
+    <img alt="water1" src="{{ "/assets/img/ProjectWater_1.png" | prepend: site.baseurl }}" />
+	<img alt="water2" src="{{ "/assets/img/ProjectWater_2.png" | prepend: site.baseurl }}" />
+	<img alt="water3" src="{{ "/assets/img/ProjectWater_3.png" | prepend: site.baseurl }}" />
   </div>
   <div class="contents">
     <h3>Project Water</h3>
@@ -70,6 +72,28 @@
 	  <li>For caustics, found out where the light passing through a ripple would intersect the cubic box. At the point of intersection there could be a caustic,
 	  if the light fell at a particular angle.</li>
 	</ul>
-    <a class="project-link" href="https://github.com/realkushagrakhare/ProjectWater">Check it out</a>
+    <a class="project-link" href="https://github.com/realkushagrakhare/ProjectWater">Github</a>
+  </div>
+</div>
+
+<div class="user-projects">
+  <div class="images-right">
+	<img alt="rrt2" src="{{ "/assets/img/RRT_2.jpg" | prepend: site.baseurl }}" />
+  </div>
+  <div class="contents">
+    <h3>Project Water</h3>
+	<p>Our project was to built a path planning algorithm which creates paths for robots, self-driving cars, drones, etc considering 
+	various non-holonomic constraints. We solved the problem statement in the following steps:</p>
+    <ul>
+      <li>Created the basic framework for path planning using RRT(Rapidly-exploring Random Trees).</li>
+      <li>Optimized the algorithm using cost function of A* to determine selection of nodes in the RRT.</li>
+      <li>Upgraded RRT into RRT* by constructing multiple short paths randomly organized as tree instead of one long path which yields 
+	  asymptotically optimum solution.</li>
+      <li>Incorporated 2-Phase sampling to reach the goal faster.</li>
+	  <li>Node pruning and Spline Fitting into the pipeline.</li>
+	  <li>Combined Dubins and Reeds-Shepp Path Planning algorithms with RRT* for non-holonomic constraints.</li>
+	</ul>
+    <a class="project-link" href="https://github.com/realkushagrakhare/3D_Path_Planning">Github</a>
+	<a class="project-link" href="https://github.com/realkushagrakhare/3D_Path_Planning/blob/master/AI%20Weekly%20Reports/AI_Final_PPT_20181127_190404.pdf">Report</a>
   </div>
 </div>
