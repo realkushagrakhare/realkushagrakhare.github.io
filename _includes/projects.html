@@ -1,9 +1,10 @@
 <div class="user-details">
-  <h1> Featured Projects </h1>
+  <h1> Select Projects </h1>
 </div>
 <div class="user-projects">
   <div class="images-right">
-    <img alt="mountains" src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" />
+    <img alt="RealEngine1" src="{{ "/assets/img/RealEngine1.png" | prepend: site.baseurl }}" />
+	<img alt="RealEngine2" src="{{ "/assets/img/RealEngine2.png" | prepend: site.baseurl }}" />
   </div>
   <div class="contents">
     <h3> Real Engine 2.0</h3>
@@ -11,7 +12,7 @@
 	<ul>
       <li>VAOs, VBOs, Vertex and Fragment Shaders for optimization</li>
       <li>OBJ and PLY file reader to load 3D models</li>
-      <li>Multiple point lights and upto 4 directional lights as well as Specular Lighting</li>
+      <li>Multiple point lights (with attenuation) and upto 4 directional lights as well as Specular Lighting</li>
       <li>Terrain generation via heightmaps as well as procedural terrain using Perlin noise</li>
       <li>Post Processing effects like lensflare, fog, cel shading, gaussian blur, contrast changer etc.</li>
       <li>Rendering GUIs and distance field text rendering</li>
@@ -81,8 +82,8 @@
 	<img alt="rrt2" src="{{ "/assets/img/RRT_2.JPG" | prepend: site.baseurl }}" />
   </div>
   <div class="contents">
-    <h3>Project Water</h3>
-	<p>Our project was to built a path planning algorithm which creates paths for robots, self-driving cars, drones, etc considering 
+    <h3>3D Path Planning</h3>
+	<p>The project was to built a path planning algorithm which creates paths for robots, self-driving cars, drones, etc considering 
 	various non-holonomic constraints. We solved the problem statement in the following steps:</p>
     <ul>
       <li>Created the basic framework for path planning using RRT(Rapidly-exploring Random Trees).</li>
